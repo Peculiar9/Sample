@@ -1,0 +1,156 @@
+ /* CSS VARIABLES  */
+
+:root{
+    --bg-color:#161616;
+    --main-bg-color:#edf1fd;
+    --nav-bgcolor:#f4f7f4;
+    --text-lang:#292929;
+    --color-imp: #FFFFFF !important;
+}
+
+/* SHADOWS  */
+:root{
+    --box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+  }
+
+
+ /* FONTS  */
+:root{
+    --font-pop: Poppins;
+    --font-main:Calibri;
+    --color-font:#6c707c;
+    --font-awesome: rgba(18, 17, 17, 0.4);
+}  
+
+body{
+    padding:0;
+    margin:0;
+    background-color: var(--bg-color);
+    position: relative;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--main-bg-color);
+    background-image: url(/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 1320px;
+    background-position: right bottom;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: var(--font-main);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: var(--nav-bgcolor);
+    box-shadow: var(--box-shadow);
+    z-index: 1;
+}
+.menu{
+    display: flex;
+
+}
+
+.menu li a {
+    padding: 10px 15px;
+    color:var(--color-font);
+    font-size: 12px;
+}
+.lang{
+    color: var(--text-lang);
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--text-lang);
+    font-family: var(--font-pop);
+}
+.menu li a:hover, .active{
+    background-color: var(--text-lang) ;
+    color: var(--color-imp);
+    font-weight: 700;
+    transition: all ease 0.4s;
+}
+
+.name{
+    font-family: var(--font-main);
+    width: 500px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate( -20%, -50%);
+}
+
+        
+.name p:nth-child(1),
+.name .details{
+    color: var(--color-font);
+    font-size: 16px;
+}
+.name h1{
+    font-family: var(--font-pop);
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color: var(--text-lang);
+} 
+
+.cv-btn{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-lang);
+    color: var(--color-imp);
+}     
+.cv-btn:hover{
+    background-color: #131313;
+    transition: all ease 0.5s;
+}
+
+.social{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    display:flex;
+    /* max-width: 200px; */
+}
+
+.social .fa{
+    /* display: inline-block;
+    justify-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* /* padding: 10px 50px; */
+    margin: 6px 12px;
+    /* border: 1px black solid;  */
+
+}
+.social i{
+    color: var(--font-awesome);
+}
+
+.social a:hover i{
+    color: #17dac1;
+    transition: all ease 0.6s;
+}
+
+
